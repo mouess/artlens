@@ -51,7 +51,7 @@ const WORK = ({ data }) => {
   }, [isVisible]);
 
   return (
-    <div className="container" id="work" ref={ref}>
+    <div className="container" id="work">
       <h1>OUR WORK</h1><br/>
       <p>
         With our deep expertise and modern equipment, we create advertisements
@@ -84,7 +84,7 @@ const WORK = ({ data }) => {
         </div>
       </div>
 
-      <div className="stats">
+      <div className="stats" ref={ref}>
         <div className="space">
           <p>More Than</p>
           <strong className="num">{count1}</strong>
