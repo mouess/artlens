@@ -3,11 +3,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
-  width: 100%;
 }
 
 h1 {
+  padding-top: 40px;
   text-align: center;
   font-size: 28px;
   font-weight: bold;
@@ -124,10 +123,11 @@ h1::after {
 
   .stats {
     gap: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .num {
     font-size: 40px;
+    padding-bottom: 10px;
   }
 }

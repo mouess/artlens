@@ -13,7 +13,10 @@
   gap: 20px;
 }
 
-/* Left section: Information */
+h1{
+  padding-bottom: 40px;
+}
+
 .infomation {
   width: 40%;
   text-align: left;
@@ -98,7 +101,7 @@
 
 @media (max-width: 800px) {
   .contact {
-    width: 100%;
+    width: 90%;
     height: 100%;
     flex-direction: column;
     text-align: center;
@@ -107,6 +110,10 @@
     align-items: center;
     margin-bottom: 30px;
     gap: 20px;
+  }
+
+  h1{
+    padding-bottom: 0px;
   }
 
   .form input,

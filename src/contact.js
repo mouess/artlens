@@ -84,9 +84,7 @@ const Contact = ({ data }) => {
 
   return (
     <>
-      <h1>CONTACT</h1>
-      <br />
-      <br />
+      <h1 className="h1">CONTACT</h1>
       <div
         id="contact"
         style={{

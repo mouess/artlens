@@ -52,7 +52,7 @@ const WORK = ({ data }) => {
 
   return (
     <div className="container" id="work" ref={ref}>
-      <h1>OUR WORK</h1>
+      <h1>OUR WORK</h1><br/>
       <p>
         With our deep expertise and modern equipment, we create advertisements
         that inspire and achieve the desired impact.

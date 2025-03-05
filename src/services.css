@@ -40,8 +40,8 @@ p {
 }
 
 .ic {
-  flex: 1 1 300px; /* Flexibility for items */
-  max-width: 300px; /* Prevent icons from getting too large */
+  flex: 1 1 300px; 
+  max-width: 300px; 
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
@@ -49,7 +49,7 @@ p {
 
 .ic img {
   width: 70px;
-  max-width: 100px; /* Ensure images don’t overflow */
+  max-width: 100px; 
   margin-bottom: 10px;
 }
 
@@ -72,37 +72,40 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Media Query for smaller screens */
 @media screen and (max-width: 800px) {
   h1 {
-    font-size: 24px; /* Adjust header font size */
+    font-size: 24px; 
   }
 
   h1::before,
   h1::after {
     content: "";
     flex-grow: 1;
-    height: 0px; /* Line thickness */
+    height: 0px; 
     background-color: rgba(62, 171, 222, 1);
     max-width: 0px; 
   }
 
+  p {
+    width: 450px;
+  }
+
   .ic {
-    max-width: 300px; /* Reduce maximum width of each icon box */
-    margin-bottom: 15px; /* Adjust spacing between icon boxes */
+    max-width: 300px; 
+    margin-bottom: 15px; 
   }
 
   .ic img {
     padding-top: 10px;
-    width: 60px; /* Reduce image size for smaller screens */
+    width: 60px; 
   }
 
   .ic h3 {
-    font-size: 20px; /* Adjust title size */
+    font-size: 20px;
   }
 
   .ic p {
-    font-size: 18px; /* Adjust description size */
-    width: 300px; /* Reduce the width of the text */
+    font-size: 18px; 
+    width: 300px; 
   }
 }
