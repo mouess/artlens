@@ -97,8 +97,8 @@ const Contact = ({ data }) => {
           filter: "brightness(0.8)",
           paddingTop: "30px",
           paddingBottom: "30px",
-          alignItems: "center",
-          textAlign: "center",
+          boxSizing: "border-box",
+          overflow: "hidden"
         }}
       >
         <br />
