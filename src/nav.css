@@ -40,7 +40,6 @@ nav {
     font-size: larger;
 }
 
-/* MENU BURGER - UNIQUEMENT POUR LES ÉCRANS < 600px */
 @media (max-width: 800px) {
     .burger-menu {
         display: flex;

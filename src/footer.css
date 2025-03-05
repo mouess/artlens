@@ -5,6 +5,8 @@ footer {
   margin-bottom: 0px;
   padding: 10px;
   width: 100%;
+  box-sizing: border-box ;
+  overflow: hidden ,
 }
 
 footer h3 {
