@@ -1,4 +1,3 @@
-
 h1 {
   text-align: center;
   font-size: 28px;
@@ -18,9 +17,9 @@ h1::before,
 h1::after {
   content: "";
   flex-grow: 1;
-  height: 3px; /* Épaisseur de la ligne */
+  height: 3px; /* Line thickness */
   background-color: rgba(62, 171, 222, 1);
-  max-width: 200px; /* Ajuste la longueur des lignes */
+  max-width: 200px; /* Maximum line length */
 }
 
 p {
@@ -37,17 +36,20 @@ p {
   align-items: center;
   padding: 30px;
   color: white;
+  flex-wrap: wrap; /* Allow icons to wrap when needed */
 }
 
 .ic {
-  flex: 1;
+  flex: 1 1 300px; /* Flexibility for items */
+  max-width: 300px; /* Prevent icons from getting too large */
   text-align: center;
   padding: 10px;
-  height: 220px;
+  box-sizing: border-box;
 }
 
 .ic img {
   width: 70px;
+  max-width: 100px; /* Ensure images don’t overflow */
   margin-bottom: 10px;
 }
 
@@ -61,85 +63,73 @@ p {
   font-size: 19px;
   color: #ddd;
   width: 250px;
+  margin: 0 auto;
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Remove horizontal scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.ic {
-  flex: 1 1 300px; /* Each icon box takes equal space and wraps if needed */
-  max-width: 300px; /* Prevents items from being too large */
-  text-align: center;
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px; /* Adjust header font size */
+  }
+
+  h1::before,
+  h1::after {
+  content: "";
+  flex-grow: 1;
+  height: 3px; /* Line thickness */
+  background-color: rgba(62, 171, 222, 1);
+  max-width: 0px; /* Maximum line length */
 }
 
-.ic img {
-  max-width: 100px; /* Ensures images don’t overflow */
-}
-
-
-@media (max-width: 800px) {
   .icones {
-    flex-direction: row; /* Affiche les icônes en colonne */
-    text-align: center;
+    padding: 20px; /* Adjust padding for smaller screens */
   }
 
   .ic {
-    max-width: 100%;
-    padding: 5px;
-    height: 230px;
+    max-width: 250px; /* Reduce maximum width of each icon box */
+    margin-bottom: 15px; /* Adjust spacing between icon boxes */
   }
 
   .ic img {
-    width: 60px;
+    width: 60px; /* Reduce image size for smaller screens */
   }
 
   .ic h3 {
-    font-size: 18px;
-    width: auto;
+    font-size: 18px; /* Adjust title size */
   }
 
   .ic p {
-    font-size: 15px;
-    width: 150px;
+    font-size: 16px; /* Adjust description size */
+    width: 220px; /* Reduce the width of the text */
   }
-
 }
 
-
-@media (max-width: 550px) {
-  .icones {
-    flex-direction: column; /* Affiche les icônes en colonne */
-    text-align: center;
+/* Media Query for very small screens */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Further reduce the header font size */
   }
 
   .ic {
-    max-width: 100%;
-    padding-top: 20px;
+    max-width: 200px; /* Further reduce the maximum width of icon boxes */
   }
 
   .ic img {
-    width: 60px;
+    width: 50px; /* Further reduce image size */
   }
 
   .ic h3 {
-    font-size: 18px;
-    width: auto;
+    font-size: 16px; /* Further adjust title size */
   }
 
   .ic p {
-    font-size: 22px;
-    width: 300px;
+    font-size: 14px; /* Further adjust description size */
+    width: 180px; /* Reduce the width of the text */
   }
-
-  .icones {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
-    color: white;
-  }
-
 }
