@@ -21,6 +21,7 @@ const Services = ({ data }) => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
+          width: "100%"
         }}
       >
         <div className="ic">

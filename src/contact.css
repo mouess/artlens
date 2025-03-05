@@ -101,8 +101,7 @@ h1{
 
 @media (max-width: 800px) {
   .contact {
-    width: 90%;
-    height: 100%;
+    width: 100%;
     flex-direction: column;
     text-align: center;
     display: flex;
