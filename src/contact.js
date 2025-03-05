@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./contact.css";
 import { createClient } from "@supabase/supabase-js";
 
@@ -18,8 +18,20 @@ const Contact = ({ data }) => {
     message: "",
   });
   const [success, setSuccess] = useState(null);
-
   const [errorMsg, setErrorMsg] = useState("");
+
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 800);
+
+  // Update the state when window size changes
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 800);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -28,12 +40,7 @@ const Contact = ({ data }) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\+?[0-9]+$/;
 
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.message
-    ) {
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
       setErrorMsg("Tous les champs sont obligatoires.");
       return false;
     }
@@ -83,7 +90,7 @@ const Contact = ({ data }) => {
       <div
         id="contact"
         style={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: isSmallScreen ? "none" : `url(${bgImage})`, // Hide background for small screens
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

@@ -17,7 +17,6 @@ h1::after {
   color: rgba(62, 171, 222, 1);
 }
 
-/* ✅ PARTNER TABLE */
 .partner-table {
   width: 100%;
   max-width: 1200px;
@@ -39,34 +38,14 @@ h1::after {
 }
 
 
-/* 📱 Tablets & Small Screens (below 800px) */
 @media (max-width: 800px) {
   
-
-  .partner-logo {
-    max-width: 120px;
-    max-height: 120px;
-  }
-
-  .partner-cell {
-    padding: 10px;
-  }
-}
-
-/* 📱 Mobile Phones (below 500px) */
-@media (max-width: 500px) {
-  .partner-table {
-    width: 100%;
-  }
-
-  .partner-cell {
-    width: 100%;
-    border: 1px solid black;
-    padding: 10px 0;
-  }
-
   .partner-logo {
     width: 80px;
     height: 80px;
+  }
+
+  .partner-cell {
+    padding: 15px;
   }
 }

@@ -73,63 +73,36 @@ body {
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   h1 {
     font-size: 24px; /* Adjust header font size */
   }
 
   h1::before,
   h1::after {
-  content: "";
-  flex-grow: 1;
-  height: 3px; /* Line thickness */
-  background-color: rgba(62, 171, 222, 1);
-  max-width: 0px; /* Maximum line length */
-}
-
-  .icones {
-    padding: 20px; /* Adjust padding for smaller screens */
+    content: "";
+    flex-grow: 1;
+    height: 0px; /* Line thickness */
+    background-color: rgba(62, 171, 222, 1);
+    max-width: 0px; 
   }
 
   .ic {
-    max-width: 250px; /* Reduce maximum width of each icon box */
+    max-width: 300px; /* Reduce maximum width of each icon box */
     margin-bottom: 15px; /* Adjust spacing between icon boxes */
   }
 
   .ic img {
+    padding-top: 10px;
     width: 60px; /* Reduce image size for smaller screens */
   }
 
   .ic h3 {
-    font-size: 18px; /* Adjust title size */
+    font-size: 20px; /* Adjust title size */
   }
 
   .ic p {
-    font-size: 16px; /* Adjust description size */
-    width: 220px; /* Reduce the width of the text */
-  }
-}
-
-/* Media Query for very small screens */
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 20px; /* Further reduce the header font size */
-  }
-
-  .ic {
-    max-width: 200px; /* Further reduce the maximum width of icon boxes */
-  }
-
-  .ic img {
-    width: 50px; /* Further reduce image size */
-  }
-
-  .ic h3 {
-    font-size: 16px; /* Further adjust title size */
-  }
-
-  .ic p {
-    font-size: 14px; /* Further adjust description size */
-    width: 180px; /* Reduce the width of the text */
+    font-size: 18px; /* Adjust description size */
+    width: 300px; /* Reduce the width of the text */
   }
 }
