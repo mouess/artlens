@@ -20,7 +20,7 @@ const WORK = ({ data }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: window.innerWidth < 800 ? 0.1 : 0.5 } // Lower threshold for small screens
     );
 
     if (ref.current) observer.observe(ref.current);
