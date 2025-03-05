@@ -98,7 +98,7 @@
     { "name": "linkedin", "src": "/images/linkedin.png", "category": "Nature" },
     { "name": "facebook", "src": "/images/facebook.png", "category": "Nature" }
   ],
-  "videos": [{ "name": "video-home", "src": "/videos/video.mov" }],
+  "videos": [{ "name": "video-home", "src": "/videos/IMG_1731.MP4" }],
 
   "icons": [
     {
