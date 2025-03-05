@@ -1,0 +1,124 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "images": [
+    { "name": "full-logo", "src": "/images/Artlens-fullLogo.PNG" },
+    { "name": "logo", "src": "/images/Artlens-Logo.png" },
+
+    { "name": "icon1", "src": "/images/icon-camera.png", "category": "Sports" },
+    { "name": "icon2", "src": "/images/icon-video.png", "category": "Sports" },
+    { "name": "icon3", "src": "/images/icon-pen.png", "category": "Sports" },
+    {
+      "name": "background1",
+      "src": "/images/bg-services.JPEG",
+      "category": "Sports"
+    },
+
+    { "name": "work1", "src": "/images/work1.JPG", "category": "Sports" },
+    { "name": "work2", "src": "/images/work2.JPG", "category": "Sports" },
+    { "name": "work3", "src": "/images/work3.JPG", "category": "Sports" },
+
+    {
+      "name": "partner1",
+      "src": "/images/partners-ministre.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner2",
+      "src": "/images/partners-sanlam.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner3",
+      "src": "/images/partners-toubkal.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner4",
+      "src": "/images/partners-safana.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner5",
+      "src": "/images/partners-iscae.jpg",
+      "category": "partners"
+    },
+    {
+      "name": "partner6",
+      "src": "/images/partners-pam.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner7",
+      "src": "/images/partners-frmf.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner8",
+      "src": "/images/partners-usym.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner9",
+      "src": "/images/partners-pps.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner10",
+      "src": "/images/partners-solounge.png",
+      "category": "partners"
+    },
+    {
+      "name": "partner11",
+      "src": "/images/partners-imi.png",
+      "category": "partners"
+    },
+    {
+      "name": "background3",
+      "src": "/images/female-director-leading-video-production-2024-04-29-18-56-13-utc.jpg",
+      "category": "Sports"
+    },
+    {
+      "name": "background4",
+      "src": "/images/bg-work.PNG",
+      "category": "Sports"
+    },
+
+    {
+      "name": "background2",
+      "src": "/images/bg-form.jpg",
+      "category": "Sports"
+    },
+
+    {
+      "name": "instagram",
+      "src": "/images/instagram.png",
+      "category": "Nature"
+    },
+    { "name": "linkedin", "src": "/images/linkedin.png", "category": "Nature" },
+    { "name": "facebook", "src": "/images/facebook.png", "category": "Nature" }
+  ],
+  "videos": [{ "name": "video-home", "src": "/videos/video.mov" }],
+
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

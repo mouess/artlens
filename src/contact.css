@@ -1,0 +1,136 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(23, 31, 46, 1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(62, 171, 222, 0.76);
+  gap: 20px;
+}
+
+/* Left section: Information */
+.infomation {
+  width: 40%;
+  text-align: left;
+  padding: 20px;
+}
+
+.contact h2 {
+  color: rgba(62, 171, 222, 1);
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.infomation p {
+  text-align: left;
+  color: aliceblue;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.infomation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infomation li {
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  color: aliceblue;
+}
+
+/* Right section: Form */
+.form {
+  width: 55%;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: aliceblue;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(23, 31, 46, 1);
+  font-weight: bold;
+}
+
+.form textarea {
+  height: 160px;
+  resize: none;
+}
+
+.form button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background: rgba(62, 171, 222, 1);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.form button:hover {
+  background: #1c2c3a;
+}
+
+/* ✅ RESPONSIVENESS */
+
+/* 📱 Tablets & Small Screens (below 900px) */
+@media (max-width: 900px) {
+  .contact {
+    width: 70%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .infomation,
+  .form {
+    width: 90%;
+    text-align: center;
+  }
+
+  .infomation p,
+  .infomation li {
+    text-align: center;
+  }
+}
+
+/* 📱 Mobile Phones (below 500px) */
+@media (max-width: 500px) {
+  .contact {
+    width: 75%;
+    padding: 20px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 16px;
+  }
+
+  .form button {
+    font-size: 18px;
+    height: 45px;
+  }
+}

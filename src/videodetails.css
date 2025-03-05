@@ -1,0 +1,10 @@
+.back{
+    border: 1px solid ;
+    background-color: rgba(62, 171, 222, 1);
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: initial;
+    text-decoration: none;
+}

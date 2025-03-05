@@ -1,0 +1,145 @@
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(62, 171, 222, 1);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  width: 100%;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  flex-grow: 1;
+  height: 3px; /* Épaisseur de la ligne */
+  background-color: rgba(62, 171, 222, 1);
+  max-width: 200px; /* Ajuste la longueur des lignes */
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.icones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+
+.ic {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  height: 220px;
+}
+
+.ic img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.ic h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ic p {
+  font-size: 19px;
+  color: #ddd;
+  width: 250px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Remove horizontal scrolling */
+}
+
+.ic {
+  flex: 1 1 300px; /* Each icon box takes equal space and wraps if needed */
+  max-width: 300px; /* Prevents items from being too large */
+  text-align: center;
+}
+
+.ic img {
+  max-width: 100px; /* Ensures images don’t overflow */
+}
+
+
+@media (max-width: 800px) {
+  .icones {
+    flex-direction: row; /* Affiche les icônes en colonne */
+    text-align: center;
+  }
+
+  .ic {
+    max-width: 100%;
+    padding: 5px;
+    height: 230px;
+  }
+
+  .ic img {
+    width: 60px;
+  }
+
+  .ic h3 {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .ic p {
+    font-size: 15px;
+    width: 150px;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+  .icones {
+    flex-direction: column; /* Affiche les icônes en colonne */
+    text-align: center;
+  }
+
+  .ic {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .ic img {
+    width: 60px;
+  }
+
+  .ic h3 {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .ic p {
+    font-size: 22px;
+    width: 300px;
+  }
+
+  .icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    color: white;
+  }
+
+}
