@@ -49,8 +49,6 @@ h1{
   color: aliceblue;
 }
 
-
-
 .form {
   width: 55%;
   text-align: left;
@@ -60,7 +58,7 @@ h1{
 
 .form input,
 .form textarea {
-  width: 100%;
+  width: 90%;
   height: 40px;
   padding: 10px;
   margin-bottom: 10px;
@@ -81,9 +79,10 @@ h1{
 }
 
 .form button {
-  width: 100%;
+  width: 90%;
   height: 50px;
   padding: 10px;
+  justify-content: center;
   background: rgba(62, 171, 222, 1);
   border: none;
   border-radius: 5px;
@@ -96,6 +95,8 @@ h1{
 
 .form button:hover {
   background: #1c2c3a;
+  color: rgba(62, 171, 222, 1);
+  font-size: larger;
 }
 
 
@@ -117,7 +118,7 @@ h1{
 
   .form input,
   .form textarea {
-    width: 100%;
+    width: 90%;
     height: 50px;
     padding: 0px;
     margin-bottom: 10px;

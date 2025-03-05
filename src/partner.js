@@ -11,11 +11,21 @@ const Partner = ({ data }) => {
 
   // Group images into rows of 4.
   const rows = [];
+  const screenWidth = window.innerWidth; // Get the screen width
+
   if (filteredImages) {
-    for (let i = 0; i < filteredImages.length; i += 4) {
-      rows.push(filteredImages.slice(i, i + 4));
+    if (screenWidth <= 800) {
+      for (let i = 0; i < filteredImages.length; i += 2) {
+        rows.push(filteredImages.slice(i, i + 2));
+      }
+    } else {
+      for (let i = 0; i < filteredImages.length; i += 4) {
+        rows.push(filteredImages.slice(i, i + 4));
+      }
     }
   }
+
+
 
   return (
     <>
