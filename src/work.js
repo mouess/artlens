@@ -52,7 +52,7 @@ const WORK = ({ data }) => {
 
   return (
     <div className="container" id="work">
-      <h1>OUR WORK</h1><br/>
+      <h1>OUR WORK</h1>
       <p>
         With our deep expertise and modern equipment, we create advertisements
         that inspire and achieve the desired impact.

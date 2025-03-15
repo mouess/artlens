@@ -29,9 +29,7 @@ const Partner = ({ data }) => {
 
   return (
     <>
-      <h1>Partners & Clients</h1>
-      <br />
-      <br />
+      <h1>Partners & Clients</h1>      
       <table className="partner-table">
         <tbody>
           {rows.map((row, rowIndex) => (

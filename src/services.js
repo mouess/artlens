@@ -7,7 +7,6 @@ const Services = ({ data }) => {
   return (
     <>
       <h1 id="services">OUR SERVICES</h1>
-      <br />
       <p>
         We are here specifically to enhance your brand and push it towards new
         horizons of excellence and innovation.

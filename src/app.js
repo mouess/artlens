@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <>
-      <Nav data={data} />
+      <Nav data={data} /><br/><br/>
       {GlobalComponents && videoSrc ? (
         <video id="home" src={videoSrc} autoPlay muted loop width="100%">
           Votre navigateur ne supporte pas la vidéo.
@@ -38,7 +38,7 @@ const App = () => {
         <p>Vidéo indisponible</p>
       ) : null}
       <br />
-      <br />
+    
       {GlobalComponents && <Services data={data} />}
       
       <Routes>
