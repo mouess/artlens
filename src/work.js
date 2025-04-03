@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import React from "react";
 import "./work.css";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const WORK = ({ data }) => {
   const navigate = useNavigate();
@@ -11,7 +13,6 @@ const WORK = ({ data }) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const bgImage = data?.images?.find((img) => img.name === "background4")?.src;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,32 +58,117 @@ const WORK = ({ data }) => {
         With our deep expertise and modern equipment, we create advertisements
         that inspire and achieve the desired impact.
       </p>
-      <div className="cards">
-        <div className="image-container" onClick={() => navigate("/photo")}>
-          <img
-            src={data?.images?.find((img) => img.name === "work1")?.src}
-            alt="PHOTO"
-          />
-          <div className="image-text">PHOTO</div>
+      
+      <div className="product-container">
+        <div className="product-grid">
+          <motion.img src={data?.images?.find((img) => img.name === "produit 3")?.src}
+            alt="Product 1" className="product-image" width="200px" height="280px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          <motion.img src={data?.images?.find((img) => img.name === "produit 4")?.src}
+            alt="Product 2" className="product-image" width="250px" height="220px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          <motion.img src={data?.images?.find((img) => img.name === "produit 2")?.src}
+            alt="Product 3" className="product-image" width="220px" height="250px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          <motion.img src={data?.images?.find((img) => img.name === "produit 1")?.src}
+            alt="Product 4" className="product-image" width="200px" height="250px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
         </div>
-        <div className="image-container" onClick={() => navigate("/videos")}>
-          <img
-            src={data?.images?.find((img) => img.name === "work2")?.src}
-            alt="VIDEO"
-          />
-          <div className="image-text">VIDEO</div>
-        </div>
-        <div
-          className="image-container"
-          onClick={() => navigate("/motiongraphic")}
-        >
-          <img
-            src={data?.images?.find((img) => img.name === "work3")?.src}
-            alt="MOTION GRAPHIC"
-          />
-          <div className="image-text">MOTION GRAPHIC</div>
-        </div>
+        
+        <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
+          <h2>produit</h2>
+          <p>
+            With our deep expertise and modern equipment, we create advertisements
+            that inspire and achieve the desired impact.
+          </p>
+          <button onClick={() => navigate(`/explorer?category=produit`)}>Explorer</button>
+        </motion.div>
       </div>
+
+      <div className="product-container2">
+          <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
+            <h2>event</h2>
+            <p>
+              With our deep expertise and modern equipment, we create advertisements
+              that inspire and achieve the desired impact.
+            </p>
+            <button onClick={() => navigate(`/explorer?category=event`)}>Explorer</button>
+          </motion.div>
+
+          <div className="product-grid">
+            <motion.img src={data?.images?.find((img) => img.name === "event 3")?.src}
+              alt="Product 1" className="product-image" width="300px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "event 2")?.src}
+              alt="Product 2" className="product-image" width="190px" height="160px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "event 1")?.src}
+              alt="Product 3" className="product-image" width="280px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "event 4")?.src}
+              alt="Product 4" className="product-image" width="370px" height="250px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          </div>
+      </div>
+
+      <div className="product-container3">
+          <div className="product-grid">
+            <motion.img src={data?.images?.find((img) => img.name === "festival 2")?.src}
+              alt="Product 1" className="product-image" width="220px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "festival 1")?.src}
+              alt="Product 2" className="product-image" width="250px" height="170px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "festival 3")?.src}
+              alt="Product 3" className="product-image" width="258px" height="175px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "festival 4")?.src}
+              alt="Product 4" className="product-image" width="220px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          </div>
+          
+          <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
+            <h2>festival</h2>
+            <p>
+              With our deep expertise and modern equipment, we create advertisements
+              that inspire and achieve the desired impact.
+            </p>
+            <button onClick={() => navigate(`/explorer?category=festival`)}>Explorer</button>
+          </motion.div>
+      </div>
+
+      <div className="product-container4">
+          <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
+            <h2>immobilier</h2>
+            <p>
+              With our deep expertise and modern equipment, we create advertisements
+              that inspire and achieve the desired impact.
+            </p>
+            <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
+          </motion.div>
+
+          <div className="product-grid">
+            <motion.img src={data?.images?.find((img) => img.name === "immobilier 2")?.src}
+              alt="Product 1" className="product-image" width="350px" height="210px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "immobilier 3")?.src}
+              alt="Product 2" className="product-image" width="350px" height="220px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "immobilier 1")?.src}
+              alt="Product 3" className="product-image" width="350px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "immobilier 4")?.src}
+              alt="Product 4" className="product-image" width="280px" height="180px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          </div>
+      </div>
+
+      <div className="product-container5">
+          <div className="product-grid">
+            <motion.img src={data?.images?.find((img) => img.name === "sport 1")?.src}
+              alt="Product 1" className="product-image" width="250px" height="180px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "sport 2")?.src}
+              alt="Product 2" className="product-image" width="350px" height="230px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "sport 4")?.src}
+              alt="Product 3" className="product-image" width="260px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "sport 3")?.src}
+              alt="Product 4" className="product-image" width="280px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          </div>
+          
+          <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
+            <h2>Sport</h2>
+            <p>
+              With our deep expertise and modern equipment, we create advertisements
+              that inspire and achieve the desired impact.
+            </p>
+            <button onClick={() => navigate(`/explorer?category=Sport`)}>Explorer</button>
+          </motion.div>
+      </div>
+
 
       <div className="stats" ref={ref}>
         <div className="space">

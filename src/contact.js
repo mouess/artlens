@@ -106,12 +106,15 @@ const Contact = ({ data }) => {
         <div className="contact">
           <div className="infomation">
             <h2>contact</h2>
-            <p>sdfs djk sqlfk l qlkfn</p>
+            <p>vous pouvez nous contacter selon ces informations </p>
             <h2>artlens informations</h2>
             <ul>
-              <li>contact@artlens.com</li>
-              <li>+33 1 23 45 67 89</li>
-              <li>sdgdsgfg qs dsqfgdsq</li>
+              <li>artlens.ma@gmail.com</li>
+              <li>+212 6 68 65 73 24</li>
+              <li>Rabat Agdal n°30 rue oued ziz App 1 <br/>
+                <a href="https://maps.app.goo.gl/3W1NMgjXaqT8JuwRA?g_st=com.google.maps.preview.copy" target="_blank">
+                     clicker ici 
+                  </a></li>
             </ul>
           </div>
           <div className="form">

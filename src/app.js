@@ -6,10 +6,7 @@ import Partner from "./partner";
 import Footer from "./footer";
 import Contact from "./contact";
 import WORK from "./work";
-import Photos from "./photos";
-import VideosPage from "./videos";
-import MotionGraphic from "./motiongraphic";
-import VideoDetail from "./VideoDetail";
+import Explorer from "./explorer";
 import "./app.css";
 
 const App = () => {
@@ -29,7 +26,8 @@ const App = () => {
 
   return (
     <>
-      <Nav data={data} /><br/><br/>
+      <Nav data={data}/><br/><br/>
+
       {GlobalComponents && videoSrc ? (
         <video id="home" src={videoSrc} autoPlay muted loop width="100%">
           Votre navigateur ne supporte pas la vidéo.
@@ -37,16 +35,12 @@ const App = () => {
       ) : GlobalComponents ? (
         <p>Vidéo indisponible</p>
       ) : null}
-      <br />
     
       {GlobalComponents && <Services data={data} />}
       
       <Routes>
         <Route path="/" element={<WORK data={data} />} />
-        <Route path="/photo" element={<Photos data={data} />} />
-        <Route path="/videos" element={<VideosPage data={data} />} />
-        <Route path="/video/:id" element={<VideoDetail data={data} />} />
-        <Route path="/motiongraphic" element={<MotionGraphic data={data} />} />
+        <Route path="/explorer" element={<Explorer data={data} />} />
       </Routes>
       
       {GlobalComponents && <Partner data={data} />}

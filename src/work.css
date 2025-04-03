@@ -30,56 +30,188 @@ h1::after {
 }
 
 /* ✅ WORK IMAGES - RESPONSIVE */
-.cards {
+.product-container , .product-container3 , .product-container5{
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  width: 100%;
-  flex-wrap: wrap; 
-  max-width: 1200px;
-  padding: 20px;
-}
-
-.image-container {
-  position: relative;
-  flex: 1 1 calc(33.333% - 20px); /* Ensures 3 items per row */
-  max-width: 350px;
-  height: 250px;
+  background: linear-gradient(to right, white, rgb(193, 244, 255), rgba(62, 171, 222, 1));
+  padding: 40px;
   border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  padding-bottom: 90px;
 }
 
-.image-container:hover {
-  transform: scale(1.05);
+.product-container2 , .product-container4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, white, rgb(193, 244, 255), rgba(62, 171, 222, 1));
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 90px;
 }
 
-.image-container:hover img {
-  filter: brightness(0.5);
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: left;
+  width: 60%;
 }
 
-.image-text {
-  position: absolute;
-  top: 50%;
+.product-image {
+  border-radius: 39px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.404);
+}
+
+.product-grid img:first-child {
+  position: relative;
+  top: 5%;
+  left: 20%;
+}
+.product-container2 .product-grid img:first-child {
+  position: relative;
+  top: 4%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+}
+.product-container3 .product-grid img:first-child {
+  position: relative;
+  top: 5%;
+  left: 20%;
+}
+.product-container4 .product-grid img:first-child {
+  position: relative;
+  top: 5%;
+  left: 100%;
+}
+.product-container5 .product-grid img:first-child {
+  position: relative;
+  top: 40%;
+  left: 100%;
 }
 
-.image-container:hover .image-text {
-  opacity: 1;
+.product-grid img:nth-child(2){
+  position: relative;
+  top: 30%;
+  left: -25%;
+}
+.product-container2 .product-grid img:nth-child(2) {
+  position: relative;
+  top: 24%;
+  left: 23%;
+}
+.product-container3 .product-grid img:nth-child(2) {
+  position: relative;
+  top: 30%;
+  left: -22%;
+}
+.product-container4 .product-grid img:nth-child(2) {
+  position: relative;
+  top: 30%;
+  left: -83%;
+}
+.product-container5 .product-grid img:nth-child(2) {
+  position: relative;
+  top: 3%;
+  left: -85%;
+}
+
+.product-grid img:nth-child(3){
+  position: relative;
+  top: 13%;
+  left: 30%;
+}
+.product-container2 .product-grid img:nth-child(3) {
+  position: relative;
+  top: 18%;
+  left: 30%;
+}
+.product-container3 .product-grid img:nth-child(3) {
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+.product-container4 .product-grid img:nth-child(3) {
+  position: relative;
+  top: 10%;
+  left: 108%;
+}
+.product-container5 .product-grid img:nth-child(3) {
+  position: relative;
+  top: 10%;
+  left: 30%;
+}
+
+.product-grid img:nth-child(4){
+  position: relative;
+  top: 13%;
+  left: -11%;
+}
+.product-container2 .product-grid img:nth-child(4) {
+  position: relative;
+  top: 8%;
+  left: 1%;
+}
+.product-container3 .product-grid img:nth-child(4) {
+  position: relative;
+  top: 19%;
+  left: -28%;
+}
+.product-container4 .product-grid img:nth-child(4) {
+  position: relative;
+  top: 40%;
+  left: -58%;
+}
+.product-container5 .product-grid img:nth-child(4) {
+  position: relative;
+  top: 33%;
+  left: -9%;
+}
+
+.product-info {
+  margin-left: 20px;
+  text-align: center;
+  width: 30%;
+  justify-content: center;
+}
+
+.product-info h2 {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+}
+
+.product-info p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.product-info button {
+  background-color: #62b6f1;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+  justify-content: center;
+  background: rgba(62, 171, 222, 1);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-info button:hover {
+  background: #1c2c3a;
+  color: rgba(62, 171, 222, 1);
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px rgba(62, 171, 222, 1) solid;
+  box-shadow: 0px 0px 10px rgba(62, 171, 222, 1);
 }
 
 /* ✅ STATISTICS SECTION */
