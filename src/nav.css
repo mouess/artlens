@@ -37,7 +37,6 @@ nav {
 
 .fullscreen-menu ul li:hover {
     color: #1c2c3a;
-    font-size: larger;
 }
 
 @media (max-width: 800px) {
