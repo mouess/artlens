@@ -72,7 +72,7 @@ const WORK = ({ data }) => {
         </div>
         
         <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-          <h2>produit</h2>
+          <h2>Produit</h2>
           <p>
             With our deep expertise and modern equipment, we create advertisements
             that inspire and achieve the desired impact.
@@ -83,7 +83,7 @@ const WORK = ({ data }) => {
 
       <div className="product-container2">
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-            <h2>event</h2>
+            <h2>Event</h2>
             <p>
               With our deep expertise and modern equipment, we create advertisements
               that inspire and achieve the desired impact.
@@ -116,7 +116,7 @@ const WORK = ({ data }) => {
           </div>
           
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-            <h2>festival</h2>
+            <h2>Festival</h2>
             <p>
               With our deep expertise and modern equipment, we create advertisements
               that inspire and achieve the desired impact.
@@ -127,7 +127,7 @@ const WORK = ({ data }) => {
 
       <div className="product-container4">
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-            <h2>immobilier</h2>
+            <h2>Immobilier</h2>
             <p>
               With our deep expertise and modern equipment, we create advertisements
               that inspire and achieve the desired impact.
