@@ -1,0 +1,114 @@
+.explorer-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .media-section {
+    margin-top: 30px;
+  }
+  
+  select {
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #818181;
+    width: 80%;
+  }
+
+  .slide img{
+    border-radius: 20px;
+    height: 100%;
+  }
+  
+  .slide {
+    height: 300px; /* tu peux adapter selon ton design */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .slider-image:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /* Lightbox overlay style */
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Lightbox content */
+  .lightbox-content {
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Lightbox image */
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  /* Navigation buttons inside the lightbox */
+  .lightbox-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lightbox-buttons button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .lightbox-buttons button:hover {
+    background-color: #444;
+  }
+  
+  /* Close button */
+  .lightbox-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    color: black;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
