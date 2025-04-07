@@ -169,6 +169,28 @@ const WORK = ({ data }) => {
           </motion.div>
       </div>
 
+      <div className="product-container4">
+          <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
+            <h2>Societe</h2>
+            <p>
+              With our deep expertise and modern equipment, we create advertisements
+              that inspire and achieve the desired impact.
+            </p>
+            <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
+          </motion.div>
+
+          <div className="product-grid">
+            <motion.img src={data?.images?.find((img) => img.name === "societe 1")?.src}
+              alt="Product 1" className="product-image" width="350px" height="210px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "societe 2")?.src}
+              alt="Product 2" className="product-image" width="240px" height="280px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "societe 3")?.src}
+              alt="Product 3" className="product-image" width="350px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            <motion.img src={data?.images?.find((img) => img.name === "societe 4")?.src}
+              alt="Product 4" className="product-image" width="280px" height="180px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+          </div>
+      </div>
+
 
       <div className="stats" ref={ref}>
         <div className="space">
