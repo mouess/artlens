@@ -82,17 +82,17 @@ h1::after {
 .product-container4 .product-grid img:first-child {
   position: relative;
   top: 5%;
-  left: 100%;
+  left: 120%;
 }
 .product-container5 .product-grid img:first-child {
   position: relative;
   top: 40%;
-  left: 100%;
+  left: 80%;
 }
 .product-container6 .product-grid img:first-child {
   position: relative;
   top: 5%;
-  left: 100%;
+  left: 120%;
 }
 
 .product-grid img:nth-child(2){
@@ -113,17 +113,17 @@ h1::after {
 .product-container4 .product-grid img:nth-child(2) {
   position: relative;
   top: 30%;
-  left: -83%;
+  left: -60%;
 }
 .product-container5 .product-grid img:nth-child(2) {
   position: relative;
   top: 3%;
-  left: -85%;
+  left: -110%;
 }
 .product-container6 .product-grid img:nth-child(2) {
   position: relative;
   top: 25%;
-  left: -55%;
+  left: -36%;
 }
 
 .product-grid img:nth-child(3){
@@ -144,17 +144,17 @@ h1::after {
 .product-container4 .product-grid img:nth-child(3) {
   position: relative;
   top: 10%;
-  left: 108%;
+  left: 120%;
 }
 .product-container5 .product-grid img:nth-child(3) {
   position: relative;
   top: 10%;
-  left: 30%;
+  left: 10%;
 }
 .product-container6 .product-grid img:nth-child(3) {
   position: relative;
   top: 10%;
-  left: 108%;
+  left: 130%;
 }
 
 .product-grid img:nth-child(4){
@@ -175,17 +175,17 @@ h1::after {
 .product-container4 .product-grid img:nth-child(4) {
   position: relative;
   top: 40%;
-  left: -58%;
+  left: -48%;
 }
 .product-container5 .product-grid img:nth-child(4) {
   position: relative;
   top: 33%;
-  left: -9%;
+  left: -29%;
 }
 .product-container6 .product-grid img:nth-child(4) {
   position: relative;
   top: 40%;
-  left: -58%;
+  left: -45%;
 }
 
 .product-info {
