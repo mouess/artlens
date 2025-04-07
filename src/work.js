@@ -174,7 +174,7 @@ const WORK = ({ data }) => {
           </motion.div>
       </div>
 
-      <div className="product-container4">
+      <div className="product-container6">
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Societe</h2>
             <p>
