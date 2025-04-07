@@ -64,7 +64,7 @@ const WORK = ({ data }) => {
           <motion.img src={data?.images?.find((img) => img.name === "produit 3")?.src}
             alt="Product 1" className="product-image" width="200px" height="280px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           <motion.img src={data?.images?.find((img) => img.name === "produit 4")?.src}
-            alt="Product 2" className="product-image" width="250px" height="220px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            alt="Product 2" className="product-image" width="200px" height="260px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           <motion.img src={data?.images?.find((img) => img.name === "produit 2")?.src}
             alt="Product 3" className="product-image" width="220px" height="250px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           <motion.img src={data?.images?.find((img) => img.name === "produit 1")?.src}
@@ -95,7 +95,7 @@ const WORK = ({ data }) => {
             <motion.img src={data?.images?.find((img) => img.name === "event 3")?.src}
               alt="Product 1" className="product-image" width="300px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "event 2")?.src}
-              alt="Product 2" className="product-image" width="190px" height="160px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+              alt="Product 2" className="product-image" width="240px" height="160px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "event 1")?.src}
               alt="Product 3" className="product-image" width="280px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "event 4")?.src}
@@ -106,13 +106,13 @@ const WORK = ({ data }) => {
       <div className="product-container3">
           <div className="product-grid">
             <motion.img src={data?.images?.find((img) => img.name === "festival 2")?.src}
-              alt="Product 1" className="product-image" width="220px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+              alt="Product 1" className="product-image" width="270px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "festival 1")?.src}
               alt="Product 2" className="product-image" width="250px" height="170px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "festival 3")?.src}
               alt="Product 3" className="product-image" width="258px" height="175px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "festival 4")?.src}
-              alt="Product 4" className="product-image" width="220px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+              alt="Product 4" className="product-image" width="270px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           </div>
           
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >

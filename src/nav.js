@@ -20,7 +20,7 @@ const Nav = ({ data }) => {
         {logo ? (
           <img src={logo} alt="Logo" onClick={() => window.location.reload()} />
         ) : (
-          <p>Logo undefined</p>
+          <p><strong>ART</strong>LENS</p>
         )}
       </div>
 
