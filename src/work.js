@@ -154,7 +154,7 @@ const WORK = ({ data }) => {
             <motion.img src={data?.images?.find((img) => img.name === "sport 2")?.src}
               alt="Product 2" className="product-image" width="350px" height="230px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "sport 4")?.src}
-              alt="Product 3" className="product-image" width="260px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+              alt="Product 3" className="product-image" width="220px" height="200px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "sport 3")?.src}
               alt="Product 4" className="product-image" width="280px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           </div>
@@ -185,7 +185,7 @@ const WORK = ({ data }) => {
             <motion.img src={data?.images?.find((img) => img.name === "societe 2")?.src}
               alt="Product 2" className="product-image" width="240px" height="280px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "societe 3")?.src}
-              alt="Product 3" className="product-image" width="350px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+              alt="Product 3" className="product-image" width="290px" height="200px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
             <motion.img src={data?.images?.find((img) => img.name === "societe 4")?.src}
               alt="Product 4" className="product-image" width="280px" height="180px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           </div>
