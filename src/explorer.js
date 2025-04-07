@@ -69,25 +69,39 @@ const Explorer = ({ data }) => {
       </select>
 
       <div className="media-section">
-        {video ? (
-          <video src={video.src} width="100%" controls />
-        ) : (
-          <p></p>
-        )}
+  {video ? (
+    <video src={video.src} width="100%" controls />
+  ) : (
+    <p></p>
+  )}
 
-        <Slider {...settings}>
-          {images.map((item, index) => (
-            <div className="slide" key={index} onClick={() => handleImageClick(index)}>
-              <img
-                src={item.src}
-                width="100%"
-                alt={item.name}
-                className="slider-image"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+  <div className="dual-sliders">
+    <Slider {...settings}>
+      {images.slice(0, Math.ceil(images.length / 2)).map((item, index) => (
+        <div className="slide" key={index} onClick={() => handleImageClick(index)}>
+          <img
+            src={item.src}
+            alt={item.name}
+            className="slider-image"
+          />
+        </div>
+      ))}
+    </Slider>
+
+    <Slider {...{ ...settings, rtl: true }}>
+      {images.slice(Math.ceil(images.length / 2)).map((item, index) => (
+        <div className="slide" key={index + Math.ceil(images.length / 2)} onClick={() => handleImageClick(index + Math.ceil(images.length / 2))}>
+          <img
+            src={item.src}
+            alt={item.name}
+            className="slider-image"
+          />
+        </div>
+      ))}
+    </Slider>
+  </div>
+</div>
+
 
       {lightboxIndex !== null && (
         <div className="lightbox-overlay" onClick={closeLightbox}>
@@ -110,3 +124,4 @@ const Explorer = ({ data }) => {
 };
 
 export default Explorer;
+

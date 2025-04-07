@@ -74,8 +74,9 @@ const WORK = ({ data }) => {
         <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
           <h2>Produit</h2>
           <p>
-            With our deep expertise and modern equipment, we create advertisements
-            that inspire and achieve the desired impact.
+          What you see here is a curated selection of our work, crafted with refined taste and great attention to detail, 
+          with the goal of showcasing each product in its best light.<br/> We don’t just capture its appearance <br/>
+           we tell a story through the image that reflects the soul and essence of the product.
           </p>
           <button onClick={() => navigate(`/explorer?category=produit`)}>Explorer</button>
         </motion.div>
@@ -85,8 +86,10 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Event</h2>
             <p>
-              With our deep expertise and modern equipment, we create advertisements
-              that inspire and achieve the desired impact.
+            We don’t just document moments; we capture the energy and atmosphere.<br/>
+            We focus on the details and genuine expressions that form the essence of the experience.<br/>
+            Our goal is to make you feel as though you were there <br/>
+            part of every moment, present in every scene, and connected to the story told through the images.
             </p>
             <button onClick={() => navigate(`/explorer?category=event`)}>Explorer</button>
           </motion.div>
@@ -129,8 +132,8 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Immobilier</h2>
             <p>
-              With our deep expertise and modern equipment, we create advertisements
-              that inspire and achieve the desired impact.
+            We capture the essence of every space and its details. We focus on the light and shadows that highlight the beauty of each corner, 
+            taking you on a unique tour of every home, where each image becomes a representation of the comfort and elegance offered by every room.
             </p>
             <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
           </motion.div>
@@ -162,8 +165,10 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Sport</h2>
             <p>
-              With our deep expertise and modern equipment, we create advertisements
-              that inspire and achieve the desired impact.
+              We don’t just capture sports moments; we capture the essence of movements and challenges. <br/>
+              We focus on moments of excitement and effort, transmitting the energy that pulses in every action. <br/>
+              Our goal is to take you to the heart of the competition, where every image becomes a story that tells the determination and drive of the athletes,
+              making you feel as though you’re at the center of the event, sharing the tension and joy in every moment.
             </p>
             <button onClick={() => navigate(`/explorer?category=Sport`)}>Explorer</button>
           </motion.div>
@@ -173,8 +178,9 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Societe</h2>
             <p>
-              With our deep expertise and modern equipment, we create advertisements
-              that inspire and achieve the desired impact.
+            We capture the moments of hard work and dedication in every project, focusing on the details of craftsmanship and precision in every maintenance, 
+            repair, or manufacturing process. Our goal is to provide images that convey your team’s skills and the significance of every step, 
+            showcasing your commitment to quality and accuracy in every service you offer.
             </p>
             <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
           </motion.div>

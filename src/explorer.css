@@ -41,7 +41,14 @@
   }
   
   .slider-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.8);
+  }
+  
+  .dual-sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
   }
   
   
@@ -83,10 +90,11 @@
   .lightbox-buttons {
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .lightbox-buttons button {
+    margin: 5px;
     padding: 10px 20px;
     background-color: #222;
     color: #fff;
@@ -110,5 +118,16 @@
     font-size: 1.5rem;
     border: none;
     cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px) {
+    .dual-sliders {
+      gap: 15px;
+    }
+  
+    .slide {
+      height: 200px;
+    }
   }
   
