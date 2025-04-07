@@ -38,7 +38,6 @@
   .slider-image {
     height: 100%;
     width: auto;
-    object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s ease;
     cursor: pointer;

@@ -64,9 +64,9 @@ const WORK = ({ data }) => {
           <motion.img src={data?.images?.find((img) => img.name === "produit 3")?.src}
             alt="Product 1" className="product-image" width="200px" height="280px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           <motion.img src={data?.images?.find((img) => img.name === "produit 4")?.src}
-            alt="Product 2" className="product-image" width="200px" height="260px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            alt="Product 2" className="product-image" width="200px" height="240px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           <motion.img src={data?.images?.find((img) => img.name === "produit 2")?.src}
-            alt="Product 3" className="product-image" width="220px" height="250px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
+            alt="Product 3" className="product-image" width="220px" height="220px" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
           <motion.img src={data?.images?.find((img) => img.name === "produit 1")?.src}
             alt="Product 4" className="product-image" width="200px" height="250px" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}/>
         </div>
@@ -74,9 +74,7 @@ const WORK = ({ data }) => {
         <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
           <h2>Produit</h2>
           <p>
-          What you see here is a curated selection of our work, crafted with refined taste and great attention to detail, 
-          with the goal of showcasing each product in its best light.<br/> We don’t just capture its appearance <br/>
-           we tell a story through the image that reflects the soul and essence of the product.
+          We don’t just capture its outer appearance <br/> we tell a story through the image that reflects the spirit and essence of the product.
           </p>
           <button onClick={() => navigate(`/explorer?category=produit`)}>Explorer</button>
         </motion.div>
@@ -86,10 +84,7 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Event</h2>
             <p>
-            We don’t just document moments; we capture the energy and atmosphere.<br/>
-            We focus on the details and genuine expressions that form the essence of the experience.<br/>
-            Our goal is to make you feel as though you were there <br/>
-            part of every moment, present in every scene, and connected to the story told through the images.
+            Our goal is to make you feel as if you were there <br/> part of every moment, present in every scene, and connected to the story told through the images.
             </p>
             <button onClick={() => navigate(`/explorer?category=event`)}>Explorer</button>
           </motion.div>
@@ -121,8 +116,7 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Festival</h2>
             <p>
-              With our deep expertise and modern equipment, we create advertisements
-              that inspire and achieve the desired impact.
+            From the interaction of the audience to the performances of the artists, <br/> we capture images that reflect the unique atmosphere of each festival or event, presenting you with unforgettable moments full of energy and life.
             </p>
             <button onClick={() => navigate(`/explorer?category=festival`)}>Explorer</button>
           </motion.div>
@@ -132,8 +126,7 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Immobilier</h2>
             <p>
-            We capture the essence of every space and its details. We focus on the light and shadows that highlight the beauty of each corner, 
-            taking you on a unique tour of every home, where each image becomes a representation of the comfort and elegance offered by every room.
+            We focus on the light and shadows that highlight the beauty of every corner, taking you on a unique journey through each home, where every image becomes a reflection of the comfort and elegance each room offers.
             </p>
             <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
           </motion.div>
@@ -165,10 +158,7 @@ const WORK = ({ data }) => {
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
             <h2>Sport</h2>
             <p>
-              We don’t just capture sports moments; we capture the essence of movements and challenges. <br/>
-              We focus on moments of excitement and effort, transmitting the energy that pulses in every action. <br/>
-              Our goal is to take you to the heart of the competition, where every image becomes a story that tells the determination and drive of the athletes,
-              making you feel as though you’re at the center of the event, sharing the tension and joy in every moment.
+            We capture the essence of movement and challenge. We focus on moments of excitement and effort, transmitting the energy that pulses through every motion. Our goal is to take you to the heart of the competition.
             </p>
             <button onClick={() => navigate(`/explorer?category=Sport`)}>Explorer</button>
           </motion.div>
@@ -176,11 +166,9 @@ const WORK = ({ data }) => {
 
       <div className="product-container6">
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-            <h2>Societe</h2>
+            <h2>Servis</h2>
             <p>
-            We capture the moments of hard work and dedication in every project, focusing on the details of craftsmanship and precision in every maintenance, 
-            repair, or manufacturing process. Our goal is to provide images that convey your team’s skills and the significance of every step, 
-            showcasing your commitment to quality and accuracy in every service you offer.
+            We capture the moments of effort and dedication in every project <br/> whether it’s maintenance, repair, or manufacturing. Our goal is to deliver images that reflect your team’s skills and the importance of every step.
             </p>
             <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
           </motion.div>
