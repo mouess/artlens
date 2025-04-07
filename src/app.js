@@ -9,44 +9,65 @@ import WORK from "./work";
 import Explorer from "./explorer";
 import "./app.css";
 
+// ✅ Spinner en attendant les données API
+const Spinner = () => (
+  <div className="spinner-container">
+    <div className="spinner"></div>
+  </div>
+);
+
 const App = () => {
   const [data, setData] = useState({ images: [], videos: [] });
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
-    fetch("https://media-api-alpha.vercel.app/media")
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch((err) => console.error("Erreur API :", err));
+    const fetchData = async () => {
+      try {
+        const res = await fetch("https://media-api-alpha.vercel.app/media");
+        const json = await res.json();
+        setData(json);
+      } catch (err) {
+        console.error("Erreur API :", err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchData();
   }, []);
-  
-  const videoSrc = data?.videos?.find((vid) => vid.name === "video-home")?.src;
 
-  const GlobalComponents = location.pathname === "/";
+  const videoSrc = data?.videos?.find((vid) => vid.name === "video-home")?.src;
+  const isHome = location.pathname === "/";
 
   return (
     <>
-      <Nav data={data}/><br/><br/>
+      <Nav data={data} />
+      <br />
+      <br />
 
-      {GlobalComponents && videoSrc ? (
+      {isHome && isLoading && <Spinner />}
+
+      {!isLoading && isHome && videoSrc && (
         <video id="home" src={videoSrc} autoPlay muted loop width="100%">
           Votre navigateur ne supporte pas la vidéo.
         </video>
-      ) : GlobalComponents ? (
+      )}
+
+      {!isLoading && isHome && !videoSrc && (
         <p>Vidéo indisponible</p>
-      ) : null}
-    
-      {GlobalComponents && <Services data={data} />}
-      
+      )}
+
+      {!isLoading && isHome && <Services data={data} />}
+
       <Routes>
-        <Route path="/" element={<WORK data={data} />} />
-        <Route path="/explorer" element={<Explorer data={data} />} />
+        <Route path="/" element={isLoading ? <Spinner /> : <WORK data={data} />} />
+        <Route path="/explorer" element={isLoading ? <Spinner /> : <Explorer data={data} />} />
       </Routes>
-      
-      {GlobalComponents && <Partner data={data} />}
+
+      {!isLoading && isHome && <Partner data={data} />}
       <br />
-      {GlobalComponents && <Contact data={data} />}
-      <Footer data={data} />
+      {!isLoading && isHome && <Contact data={data} />}
+      {!isLoading && <Footer data={data} />}
     </>
   );
 };
