@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./nav.css";
 
 const Nav = ({ data }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const logo = data?.images?.find((img) => img.name === "full-logo")?.src;
 
@@ -10,7 +13,16 @@ const Nav = ({ data }) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false); // Ferme le menu après le clic
+      setMenuOpen(false);
+    }
+  };
+
+  const handleNavClick = (id) => {
+    if (location.pathname === "/") {
+      scrollToSection(id);
+    } else {
+      navigate("/", { state: { scrollTo: id } });
+      setMenuOpen(false);
     }
   };
 
@@ -24,20 +36,18 @@ const Nav = ({ data }) => {
         )}
       </div>
 
-      {/* Menu burger - affiché seulement sur téléphone */}
       <div className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-      {/* Menu principal */}
       <div className={`fullscreen-menu ${menuOpen ? "menu-open" : ""}`}>
         <ul>
-          <li onClick={() => scrollToSection("home")}>Home</li>
-          <li onClick={() => scrollToSection("services")}>Our Services</li>
-          <li onClick={() => scrollToSection("work")}>Our Work</li>
-          <li onClick={() => scrollToSection("contact")}>Contact</li>
+          <li onClick={() => handleNavClick("home")}>Home</li>
+          <li onClick={() => handleNavClick("services")}>Our Services</li>
+          <li onClick={() => handleNavClick("work")}>Our Work</li>
+          <li onClick={() => handleNavClick("contact")}>Contact</li>
         </ul>
       </div>
     </nav>

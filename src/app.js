@@ -36,6 +36,18 @@ const App = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (location.pathname === "/" && location.state?.scrollTo) {
+      const id = location.state.scrollTo;
+      const section = document.getElementById(id);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 100); // petit délai pour laisser le DOM se charger
+      }
+    }
+  }, [location]);
+
   const videoSrc = data?.videos?.find((vid) => vid.name === "video-home")?.src;
   const isHome = location.pathname === "/";
 
