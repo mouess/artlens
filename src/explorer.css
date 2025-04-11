@@ -23,29 +23,39 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
-    gap: 20px; /* Espace de 20px entre les images */
+    gap: 20px;
+    width: 90%;
+    text-align: center;
+    margin: 30px auto 0; /* centre avec un peu de marge en haut */
   }
   
   .slide {
-    height: 300px; /* tu peux adapter selon ton design */
-    overflow: hidden;
+    height: 300px;
+    width: 100%; /* s'assurer qu'il prend la pleine largeur */
+    overflow: hidden; /* empêche le débordement lors du zoom */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Espace de 20px entre chaque image dans le même slider */
+    position: relative; /* optionnel, mais utile pour d'autres effets */
+    gap: 10px; /* 👉 petit espace entre les images */
+    margin: 10px; /* 👉 un peu d’espace entre les bords du slider */
   }
   
   .slider-image {
     height: 100%;
-    width: auto;
+    width: 100%; 
+    object-fit: cover;
     border-radius: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     cursor: pointer;
+    gap: 10px; 
+    padding: 0 5px; 
   }
   
   .slider-image:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
   }
+  
   
   
   /* Lightbox overlay style */

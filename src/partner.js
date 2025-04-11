@@ -2,7 +2,6 @@ import React from "react";
 import "./partner.css";
 
 const Partner = ({ data }) => {
-  // Filter the images as before.
   const filteredImages = data?.images?.filter(
     (img) =>
       img.category === "partners" &&

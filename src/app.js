@@ -54,8 +54,7 @@ const App = () => {
   return (
     <>
       <Nav data={data} />
-      <br />
-      <br />
+      
 
       {isHome && isLoading && <Spinner />}
 
