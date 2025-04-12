@@ -330,64 +330,88 @@ h1::after {
   .product-container6 {
     flex-direction: column;
     padding: 20px;
-    padding-bottom: 40px;
+    gap: 40px;
   }
 
-  /* For all containers, make product-grid full width and reset positions */
-  .product-grid {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .product-grid img:first-child {
+    position: relative;
+    top: 10%;
+    left: 0;
+    margin: 10px;
+  }
+  .product-grid img:nth-child(2){
+    position: relative;
+    top: 10%;
+    left: 0%;
+    margin: 10px;
   }
 
-  /* Reset all image positioning for mobile */
-  .product-grid img,
-  .product-container2 .product-grid img,
-  .product-container3 .product-grid img,
-  .product-container4 .product-grid img,
-  .product-container5 .product-grid img,
-  .product-container6 .product-grid img {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    margin: 0 !important;
-    width: 45% !important;
-    height: auto !important;
+  .product-container2 .product-grid img:first-child {
+    position: relative;
+    top: 60%;
+    left: 0%;
+    width: 160%;
+    height: 90%;
   }
-
-  /* For containers where text comes first (2,4,6) - reverse order */
-  .product-container2,
-  .product-container4,
-  .product-container6 {
-    flex-direction: column-reverse;
-  }
-
-  .product-image {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+  .product-container2 .product-grid img:nth-child(2) {
+    position: relative;
+    top: 4%;
+    left: -50%;
+    width: 140%;
+    height: 80%;
   }
   
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* Only 2 columns */
+    grid-template-rows: 1fr; /* Single row */
+    width: 100%;
+    order: 1; /* Makes grid appear first */
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+  
+  /* Hide the 3rd and 4th images */
+  .product-grid img:nth-child(3),
+  .product-grid img:nth-child(4) {
+    display: none;
+  }
+  
+  /* Style the remaining 2 images to cover full background */
+  .product-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Product info styling for mobile */
   .product-info {
-    max-width: 100%; /* Full width on mobile */
-    padding: 0 10px; /* Reduce side padding */
-    text-align: center; /* Center-align text on mobile */
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    order: 2; /* Makes info appear second */
+  }
+
+  .product-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #62b6f1;
   }
 
   .product-info p {
-    text-align: center; /* Center text on mobile */
-    white-space: normal; /* Allow natural wrapping */
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 80%; /* Prevent text from stretching too wide */
+    margin: 15px 0;
   }
 
-  /* Remove <br/> forced breaks on mobile */
-  .product-info p br {
-    display: none;
+  .product-info button {
+    display: block;
+    width: fit-content; /* Only take needed width */
+    margin: 20px auto 0; /* Center button */
+    padding: 12px 30px;
   }
-
 }
 
 
