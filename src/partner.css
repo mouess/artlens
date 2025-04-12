@@ -29,6 +29,7 @@ h1::after {
   padding: 15px;
   text-align: center;
   vertical-align: middle;
+  height: 150px;
 }
 
 .partner-logo {

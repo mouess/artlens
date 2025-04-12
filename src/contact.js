@@ -106,19 +106,19 @@ const Contact = ({ data }) => {
         <div className="contact">
           <div className="infomation">
             <h2>contact</h2>
-            <p>vous pouvez nous contacter selon ces informations </p>
+            <p>You can contact us using this information</p>
             <h2>artlens informations</h2>
             <ul>
               <li>artlens.ma@gmail.com</li>
               <li>+212 6 68 65 73 24</li>
               <li>Rabat Agdal n°30 rue oued ziz App 1 <br/>
                 <a href="https://maps.app.goo.gl/3W1NMgjXaqT8JuwRA?g_st=com.google.maps.preview.copy" target="_blank">
-                     clicker ici 
+                     click here
                   </a></li>
             </ul>
           </div>
           <div className="form">
-            <h2>envoyer nous un message</h2>
+            <h2>send us a message</h2>
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
@@ -151,7 +151,7 @@ const Contact = ({ data }) => {
                 onChange={handleChange}
               ></textarea>
               <br />
-              <button type="submit">Envoyer</button>
+              <button type="submit">submit</button>
             </form>
             <br />
             {success === true && (

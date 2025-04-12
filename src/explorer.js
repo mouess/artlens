@@ -114,15 +114,18 @@ const Explorer = ({ data }) => {
         <option value="festival">Festival</option>
         <option value="immobilier">Immobilier</option>
         <option value="sport">Sport</option>
+        <option value="societe">societe</option>
       </select>
 
       <div className="media-section">
         {video ? (
-          <video src={video.src} width="100%" controls />
+          <div className="video-container">
+            <video src={video.src} className="custom-video" controls autoPlay muted/>
+          </div>
         ) : (
           <p></p>
         )}
-
+        <br/>
         <div className="dual-sliders">
           {/* Spinner pour le premier slider */}
           {isLoadingFirstSlider ? (

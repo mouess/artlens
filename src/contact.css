@@ -67,6 +67,11 @@ a:hover{
   font-size: 20px;
 }
 
+.form h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .form input,
 .form textarea {
   width: 90%;

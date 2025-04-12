@@ -72,11 +72,11 @@ const WORK = ({ data }) => {
         </div>
         
         <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-          <h2>Produit</h2>
+          <h2>Product</h2>
           <p>
           We don’t just capture its outer appearance <br/> we tell a story through the image that reflects the spirit and essence of the product.
           </p>
-          <button onClick={() => navigate(`/explorer?category=produit`)}>Explorer</button>
+          <button onClick={() => navigate(`/explorer?category=produit`)}>Explore</button>
         </motion.div>
       </div>
 
@@ -86,7 +86,7 @@ const WORK = ({ data }) => {
             <p>
             Our goal is to make you feel as if you were there <br/> part of every moment, present in every scene, and connected to the story told through the images.
             </p>
-            <button onClick={() => navigate(`/explorer?category=event`)}>Explorer</button>
+            <button onClick={() => navigate(`/explorer?category=event`)}>Explore</button>
           </motion.div>
 
           <div className="product-grid">
@@ -118,17 +118,17 @@ const WORK = ({ data }) => {
             <p>
             From the interaction of the audience to the performances of the artists, <br/> we capture images that reflect the unique atmosphere of each festival or event, presenting you with unforgettable moments full of energy and life.
             </p>
-            <button onClick={() => navigate(`/explorer?category=festival`)}>Explorer</button>
+            <button onClick={() => navigate(`/explorer?category=festival`)}>Explore</button>
           </motion.div>
       </div>
 
       <div className="product-container4">
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-            <h2>Immobilier</h2>
+            <h2>Real estate</h2>
             <p>
             We focus on the light and shadows that highlight the beauty of every corner, taking you on a unique journey through each home, where every image becomes a reflection of the comfort and elegance each room offers.
             </p>
-            <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
+            <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explore</button>
           </motion.div>
 
           <div className="product-grid">
@@ -160,17 +160,17 @@ const WORK = ({ data }) => {
             <p>
             We capture the essence of movement and challenge. We focus on moments of excitement and effort, transmitting the energy that pulses through every motion. Our goal is to take you to the heart of the competition.
             </p>
-            <button onClick={() => navigate(`/explorer?category=Sport`)}>Explorer</button>
+            <button onClick={() => navigate(`/explorer?category=Sport`)}>Explore</button>
           </motion.div>
       </div>
 
       <div className="product-container6">
           <motion.div className="product-info" initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, ease: "easeOut" }} >
-            <h2>Servis</h2>
+            <h2>Company</h2>
             <p>
             We capture the moments of effort and dedication in every project <br/> whether it’s maintenance, repair, or manufacturing. Our goal is to deliver images that reflect your team’s skills and the importance of every step.
             </p>
-            <button onClick={() => navigate(`/explorer?category=immobilier`)}>Explorer</button>
+            <button onClick={() => navigate(`/explorer?category=societe`)}>Explore</button>
           </motion.div>
 
           <div className="product-grid">

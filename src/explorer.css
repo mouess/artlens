@@ -58,6 +58,19 @@
   
   
   
+  .custom-video {
+    max-width: 70%;
+    max-height: 500px;
+    display: block;
+    border-radius: 8px;
+    background-color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.712);
+    align-items: center;
+    margin: 30px auto 0;
+    justify-content: center;
+  }
+  
+  
   /* Lightbox overlay style */
   .lightbox-overlay {
     position: fixed;

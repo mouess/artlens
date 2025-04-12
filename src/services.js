@@ -28,19 +28,19 @@ const Services = ({ data }) => {
         <div className="ic">
           <img src={data?.images?.find((img) => img.name === "icon1")?.src} alt="icon1" width="250px" />
           <h3>Content Creation</h3>
-          <p>Conception et supervision créative de vos projets</p>
+          <p>Create quality content, reflecting your brand and supports your goals.</p>
         </div>
 
         <div className="ic">
           <img src={data?.images?.find((img) => img.name === "icon2")?.src} alt="icon2" width="100px" />
           <h3>Media Promotion</h3>
-          <p>Planification et stratégies pour promouvoir vos productions sur le web. </p>
+          <p>Planning and strategies to promote your productions online. </p>
         </div>
 
         <div className="ic">
           <img src={data?.images?.find((img) => img.name === "icon3")?.src} alt="icon3" width="100px" />
           <h3>Multimedia Production</h3>
-          <p>Création de contenu professionnel de haute qualité pour vos besoins.</p>
+          <p>Creation of high-quality professional content for your needs.</p>
         </div>
       </div>
     </>
