@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./contact.css";
 import { createClient } from "@supabase/supabase-js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 // Configuration de Supabase
 const supabaseUrl = "https://lvdvmqdtzqzuzppnjhvj.supabase.co";
@@ -105,13 +107,13 @@ const Contact = ({ data }) => {
         <br />
         <div className="contact">
           <div className="infomation">
-            <h2>contact</h2>
+            <h2>contact</h2><br/>
             <p>You can contact us using this information</p>
-            <h2>artlens informations</h2>
+            <h2>artlens informations</h2><br/>
             <ul>
-              <li>artlens.ma@gmail.com</li>
-              <li>+212 6 68 65 73 24</li>
-              <li>Rabat Agdal n°30 rue oued ziz App 1 <br/>
+              <li><FontAwesomeIcon icon={faEnvelope} className="icons"/>contact@artlens.ma</li><br/>
+              <li><FontAwesomeIcon icon={faPhone} className="icons"/>+212 6 68 65 73 24</li><br/>
+              <li><FontAwesomeIcon icon={faMapMarkerAlt} className="icons"/>Rabat Agdal n°30 rue oued ziz App 1 <br/><br/>
                 <a href="https://maps.app.goo.gl/3W1NMgjXaqT8JuwRA?g_st=com.google.maps.preview.copy" target="_blank">
                      click here
                   </a></li>

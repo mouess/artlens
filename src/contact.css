@@ -49,6 +49,11 @@ h1{
   color: aliceblue;
 }
 
+.icons {
+  margin-right: 10px;
+  color: rgba(62, 171, 222, 1); /* Optional: Change icon color */
+}
+
 a{
   font-size: 18px;
   margin-bottom: 5px;

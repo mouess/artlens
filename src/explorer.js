@@ -109,12 +109,12 @@ const Explorer = ({ data }) => {
       <h1>Explorer {category}</h1>
 
       <select onChange={(e) => setCategory(e.target.value)} value={category}>
-        <option value="produit">Produit</option>
-        <option value="event">Événement</option>
+        <option value="produit">Product</option>
+        <option value="event">Event</option>
         <option value="festival">Festival</option>
-        <option value="immobilier">Immobilier</option>
+        <option value="immobilier">Real estate</option>
         <option value="sport">Sport</option>
-        <option value="societe">societe</option>
+        <option value="societe">Company</option>
       </select>
 
       <div className="media-section">

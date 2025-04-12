@@ -87,7 +87,7 @@ h1::after {
 .product-container5 .product-grid img:first-child {
   position: relative;
   top: 40%;
-  left: 80%;
+  left: 85%;
 }
 .product-container6 .product-grid img:first-child {
   position: relative;
@@ -118,7 +118,7 @@ h1::after {
 .product-container5 .product-grid img:nth-child(2) {
   position: relative;
   top: 3%;
-  left: -90%;
+  left: -95%;
 }
 .product-container6 .product-grid img:nth-child(2) {
   position: relative;
@@ -149,7 +149,7 @@ h1::after {
 .product-container5 .product-grid img:nth-child(3) {
   position: relative;
   top: 10%;
-  left: 10%;
+  left: 15%;
 }
 .product-container6 .product-grid img:nth-child(3) {
   position: relative;
@@ -187,6 +187,210 @@ h1::after {
   top: 40%;
   left: -45%;
 }
+
+/* mediaquery */
+
+@media (max-width: 1200px) {
+
+  .product-grid img:first-child {
+    position: relative;
+    top: 15%;
+    left: 15%;
+  }
+  .product-grid img:nth-child(2){
+    position: relative;
+    top: 25%;
+    left: -20%;
+  }
+  .product-grid img:nth-child(3){
+    position: relative;
+    top: 22%;
+    left: 23%;
+  }
+  .product-grid img:nth-child(4){
+    position: relative;
+    top: 18%;
+    left: -9%;
+  }
+
+  .product-container2 .product-grid img:first-child {
+    position: relative;
+    top: 4%;
+    left: 40%;
+  }
+  .product-container2 .product-grid img:nth-child(2) {
+    position: relative;
+    top: 24%;
+    left: 30%;
+  }
+  .product-container2 .product-grid img:nth-child(3) {
+    position: relative;
+    top: 18%;
+    left: 20%;
+  }
+  .product-container2 .product-grid img:nth-child(4) {
+    position: relative;
+    top: 8%;
+    left: 10%;
+  }
+
+  .product-container3 .product-grid img:first-child {
+    position: relative;
+    top: 5%;
+    left: 15%;
+  }
+  .product-container3 .product-grid img:nth-child(2) {
+    position: relative;
+    top: 30%;
+    left: -6%;
+  }
+  .product-container3 .product-grid img:nth-child(3) {
+    position: relative;
+    top: 10%;
+    left: 3%;
+  }
+  .product-container3 .product-grid img:nth-child(4) {
+    position: relative;
+    top: 19%;
+    left: -20%;
+  }
+
+  .product-container4 .product-grid img:first-child {
+    position: relative;
+    top: 5%;
+    left: 110%;
+  }
+  .product-container4 .product-grid img:nth-child(2) {
+    position: relative;
+    top: 30%;
+    left: -80%;
+  }
+  .product-container4 .product-grid img:nth-child(3) {
+    position: relative;
+    top: 25%;
+    left: 110%;
+  }
+  .product-container4 .product-grid img:nth-child(4) {
+    position: relative;
+    top: 50%;
+    left: -65%;
+  }
+
+  .product-container5 .product-grid img:first-child {
+    position: relative;
+    top: 40%;
+    left: 105%;
+  }
+  .product-container5 .product-grid img:nth-child(2) {
+    position: relative;
+    top: 3%;
+    left: -100%;
+  }
+  .product-container5 .product-grid img:nth-child(3) {
+    position: relative;
+    top: 10%;
+    left: 10%;
+  }
+  .product-container5 .product-grid img:nth-child(4) {
+    position: relative;
+    top: 33%;
+    left: -18%;
+  }
+
+  .product-container6 .product-grid img:first-child {
+    position: relative;
+    top: 10%;
+    left: 105%;
+  }
+  .product-container6 .product-grid img:nth-child(2) {
+    position: relative;
+    top: 25%;
+    left: -65%;
+  }
+  .product-container6 .product-grid img:nth-child(3) {
+    position: relative;
+    top: 5%;
+    left: 120%;
+  }
+  .product-container6 .product-grid img:nth-child(4) {
+    position: relative;
+    top: 45%;
+    left: -65%;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+  .product-container,
+  .product-container2,
+  .product-container3,
+  .product-container4,
+  .product-container5,
+  .product-container6 {
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  /* For all containers, make product-grid full width and reset positions */
+  .product-grid {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Reset all image positioning for mobile */
+  .product-grid img,
+  .product-container2 .product-grid img,
+  .product-container3 .product-grid img,
+  .product-container4 .product-grid img,
+  .product-container5 .product-grid img,
+  .product-container6 .product-grid img {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    width: 45% !important;
+    height: auto !important;
+  }
+
+  /* For containers where text comes first (2,4,6) - reverse order */
+  .product-container2,
+  .product-container4,
+  .product-container6 {
+    flex-direction: column-reverse;
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    max-width: 100%; /* Full width on mobile */
+    padding: 0 10px; /* Reduce side padding */
+    text-align: center; /* Center-align text on mobile */
+  }
+
+  .product-info p {
+    text-align: center; /* Center text on mobile */
+    white-space: normal; /* Allow natural wrapping */
+  }
+
+  /* Remove <br/> forced breaks on mobile */
+  .product-info p br {
+    display: none;
+  }
+
+}
+
+
 
 .product-info {
   margin-left: 20px;
