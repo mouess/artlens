@@ -109,14 +109,14 @@ body {
   }
 
   .icones{
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    min-height: 100vh; /* Ensure it covers full viewport height */
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
+    height: 100vh;
+    z-index: -1;
   }
           
 }
