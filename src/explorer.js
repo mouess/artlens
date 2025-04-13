@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./explorer.css"; 
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 
 // ✅ Spinner pour chaque slider
 const Spinner = () => (
@@ -79,11 +80,19 @@ const Explorer = ({ data }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: category === "produit" ? 5 : 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
     pauseOnHover: true,
+    slidesToShow: category === "produit" ? 5 : 3,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: category === "produit" ? 2 : 1,
+        }
+      }
+    ]
   };
 
   const handleImageClick = (index) => {
