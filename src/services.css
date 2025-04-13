@@ -112,10 +112,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     width: 100%;
+    min-height: 100vh; /* Ensure it covers full viewport height */
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
   }
           
 }
