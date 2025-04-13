@@ -45,6 +45,7 @@ nav {
         flex-direction: column;
         cursor: pointer;
         padding: 10px;
+        z-index: 1001; /* Ensure it stays above the menu */
     }
 
     .burger-menu .bar {
@@ -52,22 +53,24 @@ nav {
         height: 4px;
         background-color: #000000;
         margin: 3px 20px;
-        transition: 3s;
+        transition: 0.3s;
     }
 
     .fullscreen-menu {
-        position: absolute;
-        top: 60px;
-        right: -100%;
+        position: fixed; /* Changed from absolute to fixed */
+        top: 80px;
+        right: -300px; /* Start off-screen but only by the menu width */
         background: white;
-        width: 100%;
-        height: calc(100vh - 60px);
+        width: 200px; /* Fixed width for sidebar */
+        height: 230px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start; /* Align items to the left */
+        justify-content: flex-start; /* Start from top */
         transition: right 0.3s ease-in-out;
         box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        z-index: 1000;
     }
 
     .fullscreen-menu.menu-open {
@@ -78,14 +81,19 @@ nav {
         flex-direction: column;
         gap: 20px;
         padding: 0;
+        width: 100%;
     }
 
     .fullscreen-menu ul li {
-        font-size: 20px;
+        font-size: 18px;
+        width: 100%;
+        padding: 8px 0;
     }
+
+
 }
 
-/* Cacher le menu burger et rétablir le menu normal sur écran large */
+/* Large screen styles remain the same */
 @media (min-width: 801px) {
     .burger-menu {
         display: none !important;
