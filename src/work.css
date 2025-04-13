@@ -414,12 +414,12 @@ h1::after {
   }
 
   .product-info h2 {
-    font-size: 45px;
+    font-size: 38px;
     color: #333;
   }
 
   .product-info p {
-    font-size: 1.2em;
+    font-size: 16px;
     max-width: 100%;
     color: #555;
   }
