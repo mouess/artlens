@@ -54,10 +54,17 @@ const App = () => {
     <>
       <Nav data={data} />
       
+
+      {isHome && isLoading && <Spinner />}
+
       {!isLoading && isHome && (
         <video id="home" src="/artlens - vid.mp4" autoPlay muted loop width="100%">
           Votre navigateur ne supporte pas la vidéo.
         </video>
+      )}
+
+      {!isLoading && isHome && (
+        <p>Vidéo indisponible</p>
       )}
 
       {!isLoading && isHome && <Services data={data} />}
