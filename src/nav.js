@@ -29,11 +29,7 @@ const Nav = ({ data }) => {
   return (
     <nav>
       <div className="nav-logo">
-        {logo ? (
-          <img src={logo} alt="Logo" onClick={() => window.location.reload()} />
-        ) : (
-          <p><strong>ART</strong>LENS</p>
-        )}
+        <img src="/Artlens-Logo.png" onClick={() => window.location.reload()} />
       </div>
 
       <div className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
