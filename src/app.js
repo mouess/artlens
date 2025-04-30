@@ -9,6 +9,7 @@ import WORK from "./work";
 import Explorer from "./explorer";
 import "./app.css";
 
+// ✅ Spinner en attendant les données API
 const Spinner = () => (
   <div className="spinner-container">
     <div className="spinner"></div>
@@ -47,7 +48,7 @@ const App = () => {
     }
   }, [location]);
 
-  //const videoSrc = data?.videos?.find((vid) => vid.name === "video-home")?.src;
+  const videoSrc = data?.videos?.find((vid) => vid.name === "video-home")?.src;
   const isHome = location.pathname === "/";
 
   return (
@@ -57,13 +58,13 @@ const App = () => {
 
       {isHome && isLoading && <Spinner />}
 
-      {!isLoading && isHome && (
-        <video id="home" src="/artlens - vid.mp4" autoPlay muted loop width="100%">
+      {!isLoading && isHome && videoSrc && (
+        <video id="home" src={videoSrc} autoPlay muted loop width="100%">
           Votre navigateur ne supporte pas la vidéo.
         </video>
       )}
 
-      {!isLoading && isHome && (
+      {!isLoading && isHome && !videoSrc && (
         <p>Vidéo indisponible</p>
       )}
 
