@@ -7,7 +7,7 @@ const Nav = ({ data }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  //const logo = data?.images?.find((img) => img.name === "full-logo")?.src;
+  const logo = data?.images?.find((img) => img.name === "full-logo")?.src;
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -29,7 +29,11 @@ const Nav = ({ data }) => {
   return (
     <nav>
       <div className="nav-logo">
-        <img src="/Artlens-Logo.png" alt="ARTLENS" onClick={() => window.location.reload()} />
+        {logo ? (
+          <img src={logo} alt="Logo" onClick={() => window.location.reload()} />
+        ) : (
+          <p></p>
+        )}
       </div>
 
       <div className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
