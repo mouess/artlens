@@ -55,7 +55,6 @@ const App = () => {
     <>
       <Nav data={data} />
       
-
       {isHome && isLoading && <Spinner />}
 
       {!isLoading && isHome && videoSrc && (
